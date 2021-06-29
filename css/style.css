@@ -1,4 +1,7 @@
 /* Header */
+body {
+    font-family: 'Nunito', sans-serif;
+}
 header {
     background-color: #373738;
     height: 80px;
@@ -36,7 +39,7 @@ li {
 .heroImg {
     height: 600px;
     padding: 25px;
-    background-color: lightgrey;
+    background-color: #C3ECFF;
 }
 .content {
     width: 500px;
@@ -44,6 +47,42 @@ li {
     text-align: center;
     background-color: white;
     padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #C3ECFF;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    width: 125px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button span:after {
+    content: url(../images/Icon\ feather-download.png);
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.button:hover span {
+    padding-right: 25px;
+}
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 /* Footer */
